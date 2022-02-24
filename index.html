@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"> </script>
+    </head>
+    <body>
+        <a-scene>
+            <!--Main Components-->
+            <a-entity position="10 10 12.5">
+                <a-camera></a-camera>
+            </a-entity>
+            <a-sky
+                src="images/background.jpg"
+            ></a-sky>
+            
+            <!--Surfaces-->
+            <a-plane
+                position="0 0 0"
+                rotation="-90 0 0"
+                width="20"
+                height="25"
+                src="images/wood_floor.jpg"
+            ></a-plane>
+            <a-plane
+                position="-10 7.5 0"
+                rotation="0 90 0"
+                width="25"
+                height="15"
+                color="#72849c"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+            <a-plane
+                position="0 7.5 -12.5"
+                rotation="0 0 0"
+                width="20"
+                height="15"
+                color="#72849c"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+
+            <!--Baseboard & Door Frame-->
+            <a-plane
+                position="0 0 -12.48"
+                rotation="0 0 0"
+                width="20"
+                height="3"
+                color="#bababa"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+            <a-plane
+                position="-9.98 0 -4.5"
+                rotation="0 90 0"
+                width="16"
+                height="3"
+                color="#bababa"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+            <a-plane
+                position="-9.98 0 11.25"
+                rotation="0 90 0"
+                width="2.5"
+                height="3"
+                color="#bababa"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+            <a-plane
+                position="-9.98 13.125 6.75"
+                rotation="0 90 0"
+                width="6.5"
+                height="1.25"
+                color="#bababa"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+            <a-plane
+                position="-9.98 7.5 10.625"
+                rotation="0 90 0"
+                width="1.25"
+                height="12.5"
+                color="#bababa"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+            <a-plane
+                position="-9.98 7.5 2.875"
+                rotation="0 90 0"
+                width="1.25"
+                height="12.5"
+                color="#bababa"
+                src="images/concrete_texture.jpg"
+            ></a-plane>
+
+            <!--Door-->
+            <a-plane
+                position="-9.98 6.25 6.75"
+                rotation="0 90 0"
+                width="6.5"
+                height="12.5"
+                src="images/door.jpg"
+            ></a-plane>
+            <a-cylinder
+                position="-9.5 5.5 4.75"
+                rotation="90 0 0"
+                radius="0.25"
+                height="1.25"
+                color="#7d7d7d"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="-10 5.5 4.25"
+                rotation="0 0 90"
+                radius="0.25"
+                height=""
+                color="#7d7d7d"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+
+            <!--Bed-->
+            <a-box
+                position="-2 1 0"
+                rotation="0 0 0"
+                width="1"
+                height="2"
+                depth="1"
+                color="#6b573a"
+                src="images/wood_texture.jpg"
+            ></a-box>
+            <a-box
+                position="-2 1 -12"
+                rotation="0 0 0"
+                width="1"
+                height="2"
+                depth="1"
+                color="#6b573a"
+                src="images/wood_texture.jpg"
+            ></a-box>
+            <a-box
+                position="-9 1 0"
+                rotation="0 0 0"
+                width="1"
+                height="2"
+                depth="1"
+                color="#6b573a"
+                src="images/wood_texture.jpg"
+            ></a-box>
+            <a-box
+                position="-9 1 -12"
+                rotation="0 0 0"
+                width="1"
+                height="2"
+                depth="1"
+                color="#6b573a"
+                src="images/wood_texture.jpg"
+            ></a-box>
+            <a-box
+                position="-5.5 2 -6"
+                rotation="0 0 0"
+                width="8.5"
+                height="1"
+                depth="13.5"
+                color="#806741"
+                src="images/wood_texture.jpg"
+            ></a-box>
+            <a-box
+                position="-5.5 5 -12"
+                rotation="0 0 0"
+                width="8.5"
+                height="5"
+                depth="1"
+                color="#806741"
+                src="images/wood_texture.jpg"
+            ></a-box>
+            <a-box
+                position="-5.5 3 -6"
+                rotation="0 0 0"
+                width="8"
+                height="2"
+                depth="13"
+                color="#dbd6ce"
+                src="images/blanket.jpg"
+            ></a-box>
+            <a-box
+                position="-5.5 3.375 -10.25"
+                rotation="0 0 0"
+                width="8.5"
+                height="1.75"
+                depth="2.5"
+                color="#FFFFFF"
+                src="images/fabric_texture.jpg"
+            ></a-box>
+            <a-box
+                position="-5.5 5 -10.25"
+                rotation="35 0 0"
+                width="5"
+                height="1"
+                depth="2.5"
+                color="#FFFFFF"
+                src="images/fabric_texture.jpg"
+            ></a-box>
+
+            <!--Paintings-->
+            <a-plane
+                position="-9.98 9 -5"
+                rotation="0 90 0"
+                width="7.5"
+                height="5"
+                color="#c7c7c7"
+                src="images/picture_frame.jpg"
+            ></a-plane>
+            <a-plane
+                position="-9.96 9 -5"
+                rotation="0 90 0"
+                width="7.25"
+                height="4.75"
+                src="images/waterfall.jpg"
+            ></a-plane>
+            <a-plane
+                position="-5.5 10 -12.48"
+                rotation="0 0 0"
+                width="5"
+                height="2.5"
+                color="#c7c7c7"
+                src="images/picture_frame.jpg"
+            ></a-plane>
+            <a-plane
+                position="-5.5 10 -12.46"
+                rotation="0 0 0"
+                width="4.75"
+                height="2.25"
+                src="images/starry_night.jpg"
+            ></a-plane>
+            <a-plane
+                position="5 10 -12.48"
+                rotation="0 0 0"
+                width="5"
+                height="6.5"
+                color="#c7c7c7"
+                src="images/picture_frame.jpg"
+            ></a-plane>
+            <a-plane
+                position="5 10 -12.46"
+                rotation="0 0 0"
+                width="4.75"
+                height="6.25"
+                src="images/grayscale_city.jpg"
+            ></a-plane>
+
+            <!--Table-->
+            <a-box
+                position="5 4 -9.5"
+                rotation="0 0 0"
+                width="8.5"
+                height="0.5"
+                depth="5.5"
+                color="#806741"
+                src="images/wood_texture.jpg"
+            ></a-box>
+            <a-cylinder
+                position="1.5 2 -7.5"
+                rotation="0 0 0"
+                radius="0.25"
+                height="4"
+                color="#696969"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="1.5 2 -11.5"
+                rotation="0 0 0"
+                radius="0.25"
+                height="4"
+                color="#696969"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="8.5 2 -7.5"
+                rotation="0 0 0"
+                radius="0.25"
+                height="4"
+                color="#696969"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="8.5 2 -11.5"
+                rotation="0 0 0"
+                radius="0.25"
+                height="4"
+                color="#696969"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+
+            <!--Chair-->
+            <a-box
+                position="5 2.5 -5"
+                rotation="0 0 0"
+                width="2"
+                height="0.25"
+                depth="2"
+                color="#acdb1d"
+                src="images/concrete_texture.jpg"
+            ></a-box>
+            <a-box
+                position="5 3.5 -4"
+                rotation="0 0 0"
+                width="2"
+                height="2"
+                depth="0.25"
+                color="#acdb1d"
+                src="images/concrete_texture.jpg"
+            ></a-box>
+            <a-cylinder
+                position="5 1.5 -5"
+                rotation="0 0 0"
+                radius="0.25"
+                height="2"
+                color="#696969"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="5 0.5 -5"
+                rotation="90 0 0"
+                radius="0.125"
+                height="2.5"
+                color="#696969"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="5 0.5 -5"
+                rotation="0 0 90"
+                radius="0.125"
+                height="2.5"
+                color="#696969"
+                src="images/metal_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="6 0.25 -5"
+                rotation="90 0 0"
+                radius="0.25"
+                height="0.125"
+                color="#000000"
+            ></a-cylinder>
+            <a-cylinder
+                position="4 0.25 -5"
+                rotation="90 0 0"
+                radius="0.25"
+                height="0.125"
+                color="#000000"
+            ></a-cylinder>
+            <a-cylinder
+                position="5 0.25 -6"
+                rotation="0 0 90"
+                radius="0.25"
+                height="0.125"
+                color="#000000"
+            ></a-cylinder>
+            <a-cylinder
+                position="5 0.25 -4"
+                rotation="0 0 90"
+                radius="0.25"
+                height="0.125"
+                color="#000000"
+            ></a-cylinder>
+
+            <!--Laptop-->
+            <a-box
+                position="5 4.25 -9"
+                rotation="0 0 0"
+                width="2"
+                height="0.125"
+                depth="1.25"
+                color="#bfbfbf"
+            ></a-box>
+            <a-plane
+                position="5 4.35 -9.125"
+                rotation="-90 0 0"
+                width="1.75"
+                height="0.5"
+                src="images/keyboard.png"
+            ></a-plane>
+            <a-plane
+                position="5 4.35 -8.625"
+                rotation="-90 0 0"
+                width="0.5"
+                height="0.375"
+                color="#a8a8a8"
+            ></a-plane>
+            <a-box
+                position="5 5 -9.875"
+                rotation="70 0 0"
+                width="2"
+                height="0.0625"
+                depth="1.5"
+                color="#000000"
+            ></a-box>
+            <a-plane
+                position="5 5 -9.825"
+                rotation="-20 0 0"
+                width="1.875"
+                height="1.375"
+                src="images/vscode.jpg"
+            ></a-plane>
+
+            <!--Lamp-->
+            <a-cylinder
+                position="8 7.5 10.5"
+                rotation="0 0 0"
+                radius="0.75"
+                height="2.5"
+                color="#E6DECF"
+                src="images/fabric_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="8 3.75 10.5"
+                rotation="0 0 0"
+                radius="0.125"
+                height="7.5"
+                color="#403129"
+                src="images/wood_texture.jpg"
+            ></a-cylinder>
+            <a-cylinder
+                position="8 0 10.5"
+                rotation="0 0 0"
+                radius="1"
+                height="0.5"
+                color="#403129"
+                src="images/wood_texture.jpg"
+            ></a-cylinder>
+
+        </a-scene>
+    </body>
+</html>
